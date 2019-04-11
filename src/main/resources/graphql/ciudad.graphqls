@@ -1,0 +1,17 @@
+type Ciudad {
+    id: ID!
+    nombre: String!
+    fundador: Heroe
+    rey: Heroe
+    divinidad: Divinidad
+}
+
+extend type Query {
+    ciudades: [Ciudad]!
+    ciudad(nombre: String): Ciudad
+    ciudadesRey(nombre: String): [Ciudad]!
+}
+
+extend type Mutation {
+    deleteCiudad(id: ID!) : Boolean
+}

@@ -1,0 +1,18 @@
+type Divinidad {
+    id: ID!
+    nombre: String!
+    epiteto: String!
+}
+
+extend type Query {
+    divinidades: [Divinidad]!
+}
+
+input DivinidadInput{
+    nombre: String!
+    epiteto: String!
+}
+
+extend type Mutation {
+    newDivinidad(divinidad: DivinidadInput!) : Divinidad!
+}

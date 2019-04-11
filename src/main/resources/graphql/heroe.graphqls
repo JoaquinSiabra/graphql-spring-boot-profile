@@ -1,0 +1,16 @@
+type Heroe {
+    id: ID!
+    nombre: String!
+    apellido: String!
+    posesiones: [Ciudad]
+}
+
+type Query {
+    heroes: [Heroe]!
+    heroe(nombre: String): Heroe
+    countHeroes: Long!
+}
+
+type Mutation {
+    newHeroe(nombre: String!, apellido: String!) : Heroe!
+}
