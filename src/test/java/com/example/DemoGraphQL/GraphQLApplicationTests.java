@@ -32,7 +32,7 @@ public class GraphQLApplicationTests {
 	public void testTodasCiudades() throws IOException {
 		
 		RestTemplate restTemplate = new RestTemplate();
-		String request = "{\"query\":\"\\n\\n{\\n  findHeroe(nombre: \\\"Agamenon\\\") {\\n    posesiones{divinidad{nombre}}\\n  } \\n}\",\"variables\":null,\"operationName\":null}";
+		String request = "{\"query\":\"\\n\\n{\\n  heroe(nombre: \\\"Agamenon\\\") {\\n    posesiones{divinidad{nombre}}\\n  } \\n}\",\"variables\":null,\"operationName\":null}";
 
 		ResponseEntity<String> response = restTemplate.postForEntity(URI_GRAPH,request, String.class);
 		

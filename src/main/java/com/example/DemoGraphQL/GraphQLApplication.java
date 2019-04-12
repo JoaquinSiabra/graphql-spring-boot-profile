@@ -84,7 +84,7 @@ public class GraphQLApplication {
 			// Divinidades
 			Divinidad palas = divinidadRepository.save(new Divinidad("Atenea", "Palas"));
 			Divinidad hera = divinidadRepository.save(new Divinidad("Hera", ""));
-			divinidadRepository.save(new Divinidad("Apolo", "Musageta"));
+			Divinidad apolo = divinidadRepository.save(new Divinidad("Apolo", "Musageta"));
 			divinidadRepository.save(new Divinidad("Poseidon", ""));
 			
 			// Ciudades
@@ -107,6 +107,12 @@ public class GraphQLApplication {
 			itaca.setDivinidad(palas);
 			ciudadRepository.save(itaca);
 
+			Ciudad tirinto = new Ciudad("Tirinto");
+			tirinto.setRey(perseo);
+			tirinto.setDivinidad(apolo);
+			ciudadRepository.save(tirinto);
+
+			
 			ciudadRepository.save(new Ciudad("Salamina"));
 			ciudadRepository.save(new Ciudad("Creta"));
 			ciudadRepository.save(new Ciudad("Pilos"));
