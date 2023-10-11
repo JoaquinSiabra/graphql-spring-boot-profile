@@ -1,0 +1,74 @@
+repo_name: JoaquinSiabra/graphql-spring-boot-profile
+report_id: e4ef27a580de1a6bed8bc9e4c21d43db
+repo_type: Public
+timestamp: '2023-10-11T16:09:42+00:00'
+requested_by: JoaquinSiabra
+provider: github
+branch: master
+detected_tools_count: 6
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  imageURL: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source:
+  - Repo Metadata
+- name: Spring Framework
+  description: An application framework and inversion of control container for the
+    Java platform
+  website_url: https://spring.io/projects/spring-framework
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  imageURL: https://img.stackshare.io/service/2006/spring-framework-project-logo.png
+  detection_source:
+  - pom.xml
+- name: GraphiQL
+  description: An in-browser IDE for exploring GraphQL
+  website_url: https://github.com/graphql/graphiql
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  imageURL: https://img.stackshare.io/service/7879/GraphiQL.png
+  detection_source:
+  - pom.xml
+- name: H2 Database
+  description: A relational database management system written in Java
+  website_url: http://www.h2database.com/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  imageURL: https://img.stackshare.io/service/3105/h2-logo_square_400x400.png
+  detection_source:
+  - pom.xml
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  imageURL: https://img.stackshare.io/service/1046/git.png
+  detection_source:
+  - Repo Metadata
+- name: Apache Camel
+  description: A versatile open source integration framework
+  website_url: https://camel.apache.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Platform as a Service
+  imageURL: https://img.stackshare.io/service/3276/xWt1RFo6_400x400.jpg
+  detection_source:
+  - src/main/resources/application.properties
